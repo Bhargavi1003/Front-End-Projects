@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            margin: 100px;
+            background-color: lightsteelblue;
+        }
+        h1{
+            text-align: center;
+            text-shadow: white;
+            font-family: cursive;
+            font-weight: bold;
+            text-shadow: 5px 5px 5px white;
+        }
+        p{
+            text-align: center;
+            text-shadow: white;
+            font-family: cursive;
+            font-weight: bold;
+            text-shadow: 5px 5px 5px white;
+        }
+        .a{
+            background: linear-gradient(to right, pink,palevioletred);
+            background-size: 100px;
+            display: grid;
+            grid-template-rows: auto;
+            box-shadow: 10px 10px 10px black;
+        }
+        td{
+            color: black;
+            font-family: cursive;
+            font-weight: bold;
+        }
+        input{
+            height: 25px;
+            border-radius: 10px;
+            border-color: palevioletred;
+        }
+        #submit{
+            background: linear-gradient(to left, whitesmoke,white);
+            font-family: cursive;
+            font-weight: bold;
+            color: black;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 30px;
+            width: 200px;
+            font-size: 1rem;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            font-family: cursive;
+        }
+        .para{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <h1>Registration Form</h1>
+        <p>Please fill below details to dive into our shopping world</p>
+        <form action="grid.html">
+            <table align="center" cellspacing="10" cellpadding="2" style="padding: 20px;">
+                <div>
+                <tr>
+                    <td><label for="fullname">FullName: </label></td>
+                    <td><input type="text" id="fullname" name="fullname"></td>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td><label for="mobile">Mobile: </label></td>
+                    <td><input type="text" id="mobile" name="mobile"></td>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td><label for="mail">Gmail: </label></td>
+                    <td><input type="text" id="mail" name="mail"></td>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td><label for="password">Password: </label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td><label for="confirmpassword">Confirm Password: </label></td>
+                    <td><input type="password" id="confirmpassword" name="confirmpassword"></td>
+                </tr>
+                </div>
+                <div>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" id="submit" name="confirmpassword" value="sing in"></td>
+                </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="2"><p class="para">Already have an account ? <a href="login.html">Login</a></p></td>
+                    </tr>
+                </div>
+
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>

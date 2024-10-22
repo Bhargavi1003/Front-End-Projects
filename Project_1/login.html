@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("shp1.jpg");
+        }
+        .singin{
+            text-decoration: none;
+            font-family: cursive;
+            font-weight: bold;
+         }
+        h1,p{
+            text-align: center;
+            font-family: cursive;
+        }
+        h1{
+            box-shadow: 5px 5px 10px palevioletred;
+            background: radial-gradient(circle, pink, lightslategray);
+        }
+        /* p{
+            animation: dance 1s infinite;
+        } */
+        @keyframes dance {
+      0%, 100% {
+        transform: scale(1); /* Normal size */
+      }
+      50% {
+        transform: scale(1.5); /* Scale up to 1.5x */
+      }
+    }
+        /* fieldset{
+            border-width: 10px;
+        } */
+         table{
+            background-color: cornflowerblue;
+            color: black;
+            text-align: center;
+            background: linear-gradient(to right, pink,lightslategray);
+            box-shadow: 5px 5px 10px palevioletred;
+            font-family: cursive;
+         }
+         input{
+            align-items: center;
+            background-color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+         }
+         h1::first-letter{
+            color: aqua;
+            font-size: 4rem;
+            font-weight: 200;
+            font-family: cursive;
+         }
+         h1::after{
+            content: ":)";
+            color: aqua;
+         }
+         .login{
+            height: 30px;
+            width: 150px;
+         }
+         .login:hover{
+            background: linear-gradient(to right,pink,palevioletred);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Shopping Page</h1>
+    <p>Please login to continue shopping</p>
+    <form action="grid.html" method="GET">
+        <table cellpadding="5px" cellspacing="5px" align="center" style="width: 25%;height:150px;">
+            <tr>
+                <th><label for="username">Username: </label></th>
+                <th><input type="text" id="username" name="username" required></th>
+            </tr>
+            <tr>
+                <th><label for="password">Password: </label></th>
+                <th><input type="password" id="password" name="password" required></th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Login" class="login">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="singin">Don't have an account ?<a href="singup.html">Sing in</a><p>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
